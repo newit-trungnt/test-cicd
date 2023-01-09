@@ -1,6 +1,6 @@
 name: "test-ci"
 
-run-time: ${{ github.actor }} Test CI
+run-name: ${{ github.actor }} Test CI
 on: [push]
 jobs:
   check-bats-version:
