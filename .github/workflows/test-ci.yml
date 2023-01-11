@@ -13,7 +13,7 @@ jobs:
       - run: npm i -g bats
       - run: bats -v
 on:
-  workflow-dispatch:
+  workflow_dispatch:
   push:
     branches:
       - main
