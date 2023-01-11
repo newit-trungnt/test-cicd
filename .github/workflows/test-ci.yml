@@ -13,4 +13,6 @@ jobs:
           node-version: '14'
       - run: npm i -g bats
       - run: bats -v
+    on:
+      workflow-dispatch:
 
