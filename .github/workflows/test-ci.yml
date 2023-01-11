@@ -4,9 +4,6 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: try to fail
-        run: exit 1
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
