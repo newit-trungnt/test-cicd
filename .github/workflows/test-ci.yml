@@ -1,6 +1,5 @@
 name: "test-ci"
 
-on: [push]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
@@ -13,6 +12,8 @@ jobs:
           node-version: '14'
       - run: npm i -g bats
       - run: bats -v
-    on:
-      workflow-dispatch:
-
+on:
+  workflow-dispatch:
+  push:
+    branches:
+      - main
