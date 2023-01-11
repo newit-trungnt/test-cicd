@@ -2,6 +2,7 @@ name: "test-ci"
 
 jobs:
   check-bats-version:
+    environment: dev
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v3
